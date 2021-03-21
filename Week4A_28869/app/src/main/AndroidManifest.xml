@@ -16,7 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ActivityDua">
+        <activity android:name=".ActivityDua"
             android:label="Activity Kedua"
             android:parentActivityName=".MainActivity">
             <meta-data
