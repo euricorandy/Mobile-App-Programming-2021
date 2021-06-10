@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">RecipeLib</string>
+    <string name="search_your_recipes" />
+    <string name="meal_categories" />
+    <string name="dot_loading" />
+    <string name="category" />
+    <string name="country" />
+    <string name="instructions" />
+    <string name="Ingredients" />
+    <string name="youtube" />
+    <string name="source" />
+</resources>

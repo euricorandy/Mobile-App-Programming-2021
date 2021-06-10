@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/register">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/regis"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="177dp">
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="46dp"
+            android:src="@drawable/logo" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/registerUser"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#0ED6B9"
+        android:text="Register User"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password2" />
+
+    <Button
+        android:id="@+id/back"
+        android:layout_width="230dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/button"
+        android:backgroundTint="#0ED6B9"
+        android:text="Back"
+        android:textColor="#ffffff"
+        android:textSize="23sp"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/registerUser" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/email" />
+
+
+    <EditText
+        android:id="@+id/password2"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/password" />
+
+    <EditText
+        android:id="@+id/fullName"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintHorizontal_bias="0.503"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/regUserPhoto" />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:backgroundTint="@android:color/white"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/fullName" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:fontFamily="monospace"
+        android:text="Recipe Lib"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/regUserPhoto"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/userfoto"
+        app:layout_constraintBottom_toTopOf="@+id/fullName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/banner" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

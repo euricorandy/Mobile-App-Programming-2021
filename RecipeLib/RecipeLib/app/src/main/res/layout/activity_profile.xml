@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/profile_layout"
+    tools:context=".ProfileActivity"
+    android:background="@drawable/background9">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/user_photo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="50dp"
+        app:srcCompat="@mipmap/ic_launcher_round" />
+
+    <TextView
+        android:id="@+id/fullNameTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Full Name:"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/greeting"
+        app:layout_constraintLeft_toLeftOf="@id/greeting"
+        android:layout_marginTop="20dp"
+        />
+    <TextView
+        android:id="@+id/user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/fullNameTitle"
+        app:layout_constraintLeft_toLeftOf="@id/fullNameTitle"
+        android:text="Android Studio"
+        android:textSize="20sp"
+        />
+
+    <TextView
+        android:id="@+id/emailAddressTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Email Address:"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@+id/greeting"
+        app:layout_constraintTop_toBottomOf="@+id/fullName"
+        />
+
+    <TextView
+        android:id="@+id/user_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="android.studio@android.com"
+        app:layout_constraintLeft_toLeftOf="@+id/emailAddressTitle"
+        app:layout_constraintTop_toBottomOf="@id/emailAddressTitle"
+        />
+</LinearLayout>
+
+    <Button
+        android:id="@+id/signOut"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:textStyle="bold"
+        android:backgroundTint="@color/darkBrown"
+        android:textColor="#ffff"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="40dp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
